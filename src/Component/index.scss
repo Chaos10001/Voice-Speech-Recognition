@@ -1,0 +1,66 @@
+.startRecord {
+  height: 2rem;
+  width: 2rem;
+  color: green;
+  cursor: not-allowed;
+}
+.stopRecord {
+  height: 2rem;
+  width: 2rem;
+  color: red;
+  cursor: not-allowed;
+}
+.play {
+  height: 2rem;
+  width: 2rem;
+  color: green;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    background-color: green;
+    border-radius: 100%;
+    transition: all 0.7s ease-in-out;
+  }
+}
+.stop {
+  height: 2rem;
+  width: 2rem;
+  color: red;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    transition: all 0.7s ease-in-out;
+  }
+}
+.reset {
+  height: 2rem;
+  width: 2rem;
+  color: grey;
+  cursor: pointer;
+
+  &:hover {
+    transform: rotate(360deg);
+    transition: all 0.7s ease-in-out;
+  }
+}
+.robot {
+  height: 2rem;
+  width: 2rem;
+  color: grey;
+
+  &::before{
+    content: 'bot';
+    position: absolute;
+    top: 12rem;
+    bottom: 0;
+  }
+}
+.message{
+  border: 1px solid red;
+  height: 22rem;
+  width: 100%;
+}
